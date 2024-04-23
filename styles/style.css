@@ -62,7 +62,7 @@ header {
     }
     .nav-list li {
         padding: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .logo {
@@ -177,7 +177,7 @@ button:hover {
     justify-content: space-between;
 }
 
-.fmb {
+.img {
     width: 32vw;
     height: auto;
 }
@@ -187,7 +187,7 @@ button:hover {
     
 }
 
-.fmb-container {
+.img-container {
     display: flex;
     justify-content: center;
 }
@@ -201,7 +201,7 @@ button:hover {
 
     }
 
-    .fmb {
+    .img {
         width: 80vw;
         height: auto;
     }
@@ -215,7 +215,7 @@ button:hover {
         display: none;
     }
 
-    .fmb {
+    .img {
         margin-top: 3rem;
     }
 }
