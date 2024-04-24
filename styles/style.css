@@ -183,16 +183,16 @@ button:hover {
 @media only screen and (max-width: 450px) {
     .section-container, .intro {
         width: 100vw;
-        height: 75vh;
+        height: 90vh;
     }
 
     #title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
     #intro-p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -200,6 +200,21 @@ button:hover {
         padding:0.4rem;
         font-size: 0.7rem;
     
+    }
+
+    .text-container {
+        width: 90vw;
+        margin: 0 auto;
+        
+    }
+    
+    .main-text {
+        width: 90vw;
+        margin: 0 auto;
+        position: relative;
+        top: -50vh;
+        
+        
     }
 }
 
