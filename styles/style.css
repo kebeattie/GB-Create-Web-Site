@@ -59,11 +59,7 @@ header {
 
 /* The dropdown container */
 .dropdown {
-<<<<<<< HEAD
     /* overflow: hidden; */
-=======
-    overflow: hidden;
->>>>>>> 3bccdeafde39e7b5d884010814bf9f34c2447e7c
     display: inline;
     
   }
@@ -78,18 +74,11 @@ header {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-<<<<<<< HEAD
     
-=======
->>>>>>> 3bccdeafde39e7b5d884010814bf9f34c2447e7c
   }
 
   /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-<<<<<<< HEAD
-=======
-    /* background-color: gray; */
->>>>>>> 3bccdeafde39e7b5d884010814bf9f34c2447e7c
     color: blue;
     cursor: pointer;
   }
