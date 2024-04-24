@@ -152,8 +152,7 @@ header {
 
     .logo {
         min-width: 150px;
-        position: relative;
-        right: -5px;
+        
     }
 
     .dropdown .dropbtn {
@@ -163,10 +162,12 @@ header {
     .icon {
         background: white;
         display: inline;
-        text-align: center;
+        font-size: 1.5rem;
         padding: 0.5rem;
         color: rgb(126, 126, 126);
-        border-radius: 10px;
+        position: relative;
+        right: 4px;
+        
         /* border: 1px solid rgb(126, 126, 126); */
     }
 
@@ -203,7 +204,7 @@ header {
 
     .mobile-nav-list a:hover {
         background-color: black;
-        
+
     }
 
     /* .mobile-nav-list a:hover {
@@ -362,6 +363,8 @@ main {
     .main-button {
         padding: 0.4rem;
         font-size: 0.7rem;
+        position: relative;
+        left: 8px;
 
     }
 
