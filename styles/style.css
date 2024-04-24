@@ -39,10 +39,22 @@ header {
     
 }
 
+/* Style the hamburger menu */
+.icon {
+    background: rgb(126, 126, 126);
+    display: none;
+    
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+  }
+
 .nav-list {
     display: flex;
     justify-content: space-around;
 }
+
+
 .logo {
     width: 15%;
     height: auto;
@@ -119,14 +131,20 @@ header {
     header {
         width: 80vw;
         /* height: 15vh; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav {
         margin-left: 1rem;
+        
     }
     .nav-list li {
         padding: 0.3rem;
         font-size: 0.5rem;
+        display: block;
+        float:initial;
     }
 
     .logo {
@@ -136,6 +154,21 @@ header {
     .dropdown .dropbtn {
         font-size: 0.5rem;
     }
+
+    .icon {
+        background: rgb(126, 126, 126);
+        display: inline;
+        text-align: center;
+        padding: 0.5rem;
+        color: white;
+        border-radius: 10px;
+      }
+    .icon:hover {
+        color: white;
+    }
+      .nav-list {
+        display: none;
+      }
     
 }
 
@@ -479,7 +512,7 @@ footer {
     align-items: center;
 }
 
-.fa {
+.fa-facebook .fa-instagram {
     padding: 0px;
     font-size: 30px;
     width: 30px;
@@ -506,7 +539,7 @@ footer {
         height: 25vh;
     }
 
-    .fa {
+    .fa-facebook .fa-instagram {
         margin-left: 0.5rem;
     }
   }
