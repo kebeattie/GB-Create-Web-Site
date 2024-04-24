@@ -27,27 +27,27 @@ a:hover {
 /* header styles */
 
 header {
-    
+
     width: 65vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    
 
-    
+
+
 }
 
 /* Style the hamburger menu */
 .icon {
     background: rgb(126, 126, 126);
     display: none;
-    
+
     /* position: absolute;
     right: 0;
     top: 0; */
-  }
+}
 
 .nav-list {
     display: flex;
@@ -73,82 +73,87 @@ header {
 .dropdown {
     /* overflow: hidden; */
     display: inline;
-    
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
     font-size: 1rem;
     border: none;
     outline: none;
     color: black;
     padding: 0;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    
-  }
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
 
-  /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     color: blue;
     cursor: pointer;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     color: black;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     float: none;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 
-  /* Add a grey background color to dropdown links on hover */
+/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: gray;
     color: white;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
+
+
+.mobile-nav-list {
+    display: none;
+}
 
 /* Mobile Styles */
-@media only screen  and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     header {
         width: 80vw;
         /* height: 15vh; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: end;
+        
     }
 
     nav {
         margin-left: 1rem;
-        
-    }
-    .nav-list li {
-        padding: 0.3rem;
-        font-size: 0.5rem;
-        display: block;
-        float:initial;
+
     }
 
     .logo {
         min-width: 150px;
+        position: relative;
+        right: -5px;
     }
 
     .dropdown .dropbtn {
@@ -156,25 +161,66 @@ header {
     }
 
     .icon {
-        background: rgb(126, 126, 126);
+        background: white;
         display: inline;
         text-align: center;
         padding: 0.5rem;
-        color: white;
+        color: rgb(126, 126, 126);
         border-radius: 10px;
-      }
-    .icon:hover {
-        color: white;
+        /* border: 1px solid rgb(126, 126, 126); */
     }
-      .nav-list {
+
+
+
+    .icon:hover {
+        color: rgb(126, 126, 126);
+    }
+
+    .nav-list {
         display: none;
-      }
+    }
+
+    .mobile-nav-list {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* .mobile-nav-list li {
+        list-style-type: none;
+        
+        padding: 10px;
+    } */
+
+    .mobile-nav-list a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        line-height: 2;
+        color: white; 
+        background-color: rgb(126, 126, 126);
+        border-bottom: 1px solid white;
+    }
+
+    .mobile-nav-list a:hover {
+        background-color: black;
+        
+    }
+
+    /* .mobile-nav-list a:hover {
+        color: black;
+    }
+
+    .mobile-nav-list li:hover {
+        background-color: white;
+        color: black;
     
+    } */
+
 }
 
 /* Tablet Styles */
 
-@media only screen  and (min-width: 780px) and (max-width: 1100px) {
+@media only screen and (min-width: 780px) and (max-width: 1100px) {
     header {
         width: 80vw;
     }
@@ -182,6 +228,7 @@ header {
     nav {
         margin-left: 1rem;
     }
+
     .nav-list li {
         padding: 0.3rem;
         font-size: 1rem;
@@ -203,6 +250,7 @@ header {
         font-size: 0.8rem;
         margin-left: 10px;
     }
+
     header {
         width: 80vw;
     }
@@ -213,13 +261,13 @@ header {
 }
 
 
-    
+
 
 /* main styles */
 
 main {
     width: 100vw;
-    
+
 }
 
 .section-container {
@@ -227,15 +275,15 @@ main {
     height: 35vw;
     background-color: black;
     margin: 0 auto;
-   
 
-    
+
+
 }
 
 .intro {
-    
+
     width: 100vw;
-    height: auto; 
+    height: auto;
     background: url("../media/main_opaque.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -244,7 +292,7 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+
 
 }
 
@@ -254,7 +302,7 @@ main {
 .text-container {
     width: 66vw;
     margin: 0 auto;
-    
+
 }
 
 .main-text {
@@ -262,23 +310,24 @@ main {
     margin: 0 auto;
     position: relative;
     top: -50vh;
-    
-    
+
+
 }
-.intro h1{
+
+.intro h1 {
     color: white;
     font-size: 3rem;
     text-align: center;
 }
 
-.intro p{
+.intro p {
     color: white;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .main-button {
-    padding:1rem;
+    padding: 1rem;
     border-radius: 10px;
     margin-top: 5rem;
     text-align: center;
@@ -293,7 +342,9 @@ main {
 
 /* Mobile Styles */
 @media only screen and (max-width: 450px) {
-    .section-container, .intro {
+
+    .section-container,
+    .intro {
         width: 100vw;
         height: 90vh;
     }
@@ -303,63 +354,65 @@ main {
         text-align: center;
     }
 
-    #intro-p{
+    #intro-p {
         font-size: 1rem;
         text-align: center;
     }
 
     .main-button {
-        padding:0.4rem;
+        padding: 0.4rem;
         font-size: 0.7rem;
-    
+
     }
 
     .text-container {
         width: 90vw;
         margin: 0 auto;
-        
+
     }
-    
+
     .main-text {
         width: 90vw;
         margin: 0 auto;
         position: relative;
         top: -50vh;
-        
-        
+
+
     }
 }
 
 /* Tablet Styles */
 
 @media only screen and (min-width: 781px) and (max-width: 936px) {
-    
+
 
     #title {
         font-size: 2rem;
         text-align: center;
     }
 
-    #intro-p{
+    #intro-p {
         font-size: 1rem;
         text-align: center;
     }
 
     .main-button {
-        padding:0.7rem;
-    
+        padding: 0.7rem;
+
     }
 
     .text-container {
         width: 80vw;
-        
+
     }
 }
 
 /*Small Tablet Styles */
 
 @media only screen and (min-width:451px) and (max-width: 936px) {
-    .section-container, .intro {
+
+    .section-container,
+    .intro {
         width: 100vw;
         height: 75vh;
     }
@@ -369,14 +422,14 @@ main {
         text-align: center;
     }
 
-    #intro-p{
+    #intro-p {
         font-size: 1rem;
         text-align: center;
     }
 
     .main-button {
-        padding:0.7rem;
-    
+        padding: 0.7rem;
+
     }
 
 }
@@ -396,7 +449,7 @@ main {
 
 .about-container {
     width: 32vw;
-    
+
 }
 
 .img-container {
@@ -405,8 +458,8 @@ main {
 }
 
 /* Mobile Styles */
-@media only screen  and (max-width: 450px) {
-    .who{
+@media only screen and (max-width: 450px) {
+    .who {
         display: flex;
         flex-direction: column;
         width: 80vw;
@@ -418,10 +471,10 @@ main {
         width: 80vw;
         height: auto;
     }
-    
+
     .about-container {
         width: 80vw;
-        
+
     }
 
     .two {
@@ -435,7 +488,7 @@ main {
 
 /* Tablet Styles */
 @media only screen and (min-width: 912px) and (max-width: 1100px) {
-    .who{
+    .who {
         display: flex;
         flex-direction: column;
         width: 80vw;
@@ -447,10 +500,10 @@ main {
         width: 80vw;
         height: auto;
     }
-    
+
     .about-container {
         width: 80vw;
-        
+
     }
 
     .two {
@@ -465,7 +518,7 @@ main {
 
 /* Small Tablet Styles */
 @media only screen and (min-width: 451px) and (max-width: 912px) {
-    .who{
+    .who {
         display: flex;
         flex-direction: column;
         width: 80vw;
@@ -477,10 +530,10 @@ main {
         width: 80vw;
         height: auto;
     }
-    
+
     .about-container {
         width: 80vw;
-        
+
     }
 
     .two {
@@ -508,50 +561,53 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.fa-facebook .fa-instagram {
+.socials a {
     padding: 0px;
     font-size: 30px;
     width: 30px;
+    /* margin: 10px; */
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     color: white;
-  }
+}
 
-  
 
-  .socials {
+
+.socials {
     display: flex;
     justify-content: center;
     width: 7.5vw;
-  }
+}
+
 /* Mobile Styles */
-  @media only screen  and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .f-container {
         width: 80%;
 
     }
+
     footer {
         height: 25vh;
     }
 
-    .fa-facebook .fa-instagram {
+    .socials a {
         margin-left: 0.5rem;
     }
-  }
+}
 
-  @media only screen and (min-width: 451px) and (max-width: 1100px) {
+@media only screen and (min-width: 451px) and (max-width: 1100px) {
     footer {
         height: 25vh;
     }
-  }
- @media only screen and (max-height: 550px) {
+}
+
+@media only screen and (max-height: 550px) {
     footer {
         height: 200px;
     }
- }
-  
+}

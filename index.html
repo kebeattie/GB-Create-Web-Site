@@ -23,7 +23,7 @@
 
             <!-- Desktop and tablet nav-->
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Services &#9660;</button>
@@ -50,21 +50,13 @@
 
     <main>
         <ul class="mobile-nav-list" id="links">
-            <li><a href="#">Home</a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Services &#9660;</button>
-                    <div class="dropdown-content">
-                        <a href="#">Structural Surveys</a>
-                        <a href="#">Design</a>
-                    </div>
-                </div>
-            </li>
+            <li><a href="#home" onclick="myFunction()">Home</a></li>
+            <li><a href="#">Structural Surveys</a></li>
+            <li><a href="#">Design</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li></li>
 
         </ul>
-        <div class="section-container" id="#animate">
+        <div class="section-container" id="#home">
             <section class="intro">
                 <div class="text-container">
                     <h1 id="title">Structural Surveys and Commercial Design</h1><br>
@@ -137,8 +129,8 @@
             <p>0728321743</p><br>
 
             <div class="socials">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook" id="fb"></a>
+                <a href="#" class="fa fa-instagram" id="ins"></a>
             </div>
 
 
