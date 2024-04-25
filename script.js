@@ -1,3 +1,4 @@
+
 function myFunction() {
     var x = document.getElementById("links");
     if (x.style.display === "block") {
@@ -5,4 +6,8 @@ function myFunction() {
     } else {
       x.style.display = "block";
     }
+
+   
+
   }
+
