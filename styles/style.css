@@ -137,7 +137,7 @@ header {
 @media only screen and (max-width: 450px) {
     header {
         width: 80vw;
-        /* height: 15vh; */
+
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -168,7 +168,7 @@ header {
         position: relative;
         right: 4px;
         
-        /* border: 1px solid rgb(126, 126, 126); */
+    
     }
 
 
@@ -186,11 +186,6 @@ header {
         margin: 0 auto;
     }
 
-    /* .mobile-nav-list li {
-        list-style-type: none;
-        
-        padding: 10px;
-    } */
 
     .mobile-nav-list a {
         display: block;
@@ -207,15 +202,6 @@ header {
 
     }
 
-    /* .mobile-nav-list a:hover {
-        color: black;
-    }
-
-    .mobile-nav-list li:hover {
-        background-color: white;
-        color: black;
-    
-    } */
 
 }
 
@@ -454,6 +440,10 @@ main {
     justify-content: space-between;
 }
 
+.who p{
+    line-height: 2;
+}
+
 .img {
     width: 32vw;
     height: auto;
@@ -495,6 +485,11 @@ main {
 
     .img {
         margin-top: 3rem;
+    }
+
+    #reviews {
+        width: 70vw;
+        margin: 0 auto;
     }
 }
 
