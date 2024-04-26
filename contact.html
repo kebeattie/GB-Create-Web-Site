@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="media/Logo1.png" alt="The logo, in grey and orange, for GB Create Ltd.">
+
+        <nav>
+
+            <!-- Desktop and tablet nav-->
+            <ul class="nav-list" id="desk-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services &#9660;</button>
+                        <div class="dropdown-content">
+                            <a href="#">Structural Surveys</a>
+                            <a href="#">Design</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li></li>
+
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <ul class="mobile-nav-list" id="links">
+            <li><a href="#home" onclick="myFunction()">Home</a></li>
+            <li><a href="#">Structural Surveys</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+        <h1 class="title">Get in touch</h1>
+
+        <section class="form">
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button"
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="f-container">
+
+            <h3>Get in Touch</h3><br>
+            <p>gb_create@sky.com</p><br>
+            <p>0728321743</p><br>
+
+            <div class="socials">
+                <a href="#" class="fa fa-facebook" id="fb"></a>
+                <a href="#" class="fa fa-instagram" id="ins"></a>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

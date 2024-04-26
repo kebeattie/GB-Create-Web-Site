@@ -141,7 +141,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: end;
-        
+
     }
 
     nav {
@@ -152,7 +152,7 @@ header {
 
     .logo {
         min-width: 250px;
-        
+
     }
 
     .dropdown .dropbtn {
@@ -167,8 +167,8 @@ header {
         color: rgb(126, 126, 126);
         position: relative;
         right: 4px;
-        
-    
+
+
     }
 
 
@@ -192,7 +192,7 @@ header {
         width: 100%;
         padding: 10px;
         line-height: 2;
-        color: white; 
+        color: white;
         background-color: rgb(126, 126, 126);
         border-bottom: 1px solid white;
     }
@@ -440,7 +440,7 @@ main {
     justify-content: space-between;
 }
 
-.who p{
+.who p {
     line-height: 2;
 }
 
@@ -458,6 +458,20 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.form {
+    margin: 0 auto;
+    width: 64vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 450px) {
