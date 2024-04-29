@@ -84,6 +84,7 @@ header {
     padding: 0;
     background-color: inherit;
     font-family: inherit;
+    
     /* Important for vertical align on mobile phones */
     margin: 0;
     /* Important for vertical align on mobile phones */
@@ -292,6 +293,39 @@ main {
 
 }
 
+.section-container-contact {
+    width: 100vw;
+    height: 15vw;
+    background-color: black;
+    margin: 0 auto;
+
+
+
+}
+
+.intro-container-contact {
+
+    width: 100vw;
+    height: auto;
+    background: url("../media/main_opaque.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.intro-container-contact h1{
+    color: white;
+    font-size: 3rem;
+}
+
+
+
 
 
 
@@ -328,6 +362,7 @@ main {
     margin-top: 5rem;
     text-align: center;
     border: none;
+    font-family: Montserrat, Arial;
 }
 
 .main-button:hover {
@@ -460,16 +495,79 @@ main {
 }
 
 .form {
-    margin: 0 auto;
-    width: 64vw;
-    border: 2px solid red;
+    margin: 25px auto 20px auto;
+    width: 30vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-family: Montserrat, Arial;
+    background-color: rgb(231, 229, 229);
+    border-radius: 20px;
+    
+    
 }
 
-.title {
+.fcf-form-class {
+    width: 50%;
+    height: 40vh;
+}
+
+.fcf-form-control {
+   width: 100%;
+   padding: 8px 10px 10px 10px;
+   margin-top: 20px;
+   border-radius: 5px;
+   text-align: left;
+   font-family: Montserrat, Arial;
+}
+
+#fcf-button {
+    
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: Montserrat, Arial;
+    
+}
+#fcf-button:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+}
+#fcf-button:active {
+    position: relative;
+    top: 5px;
+}
+
+.form h2 {
+    margin-top: 15px;
+}
+
+/* .alt-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px auto 20px auto;
+    width: 30vw;
+    font-family: Montserrat, Arial;
+    background-color: rgb(231, 229, 229);
+    border-radius: 20px;
+    
+}
+
+.tel-contact, .email-contact, .address-contact{
     text-align: center;
 }
+
+.container {
+    display: flex;
+    width: 66vw;
+    margin: 0 auto;
+    
+}  */
+
 
 
 
