@@ -82,7 +82,7 @@ header {
     padding: 0;
     background-color: inherit;
     font-family: inherit;
-    
+
     /* Important for vertical align on mobile phones */
     margin: 0;
     /* Important for vertical align on mobile phones */
@@ -316,7 +316,7 @@ main {
 
 }
 
-.intro-container-contact h1{
+.intro-container-contact h1 {
     color: white;
     font-size: 3rem;
 }
@@ -503,8 +503,19 @@ main {
     font-family: Montserrat, Arial;
     background-color: rgb(231, 229, 229);
     border-radius: 20px;
-    
-    
+
+
+}
+
+.form-submit {
+    width: 66vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .fcf-form-class {
@@ -513,28 +524,30 @@ main {
 }
 
 .fcf-form-control {
-   width: 100%;
-   padding: 8px 10px 10px 10px;
-   margin-top: 20px;
-   border-radius: 5px;
-   text-align: left;
-   font-family: Montserrat, Arial;
+    width: 100%;
+    padding: 8px 10px 10px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: left;
+    font-family: Montserrat, Arial;
 }
 
 #fcf-button {
-    
+
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px;
     font-family: Montserrat, Arial;
-    
+
 }
+
 #fcf-button:hover {
     background-color: gray;
     cursor: pointer;
     color: white;
 }
+
 #fcf-button:active {
     position: relative;
     top: 5px;
@@ -547,17 +560,19 @@ main {
 
 .section-container-contact i {
     font-size: 2rem;
-    color: white; 
+    color: white;
 }
 
-.phone, .email {
+.phone,
+.email {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 10vw;
 }
 
-.phone a, .email a {
+.phone a,
+.email a {
     color: white;
 }
 
@@ -611,21 +626,24 @@ main {
 
     .section-container-contact i {
         font-size: 1.5rem;
-        color: white; 
+        color: white;
     }
 
     .section-container-contact h1 {
         font-size: 1.5rem;
-        color: white; 
+        color: white;
     }
 
-    .section-container-contact, .intro-container-contact  {
+    .section-container-contact,
+    .intro-container-contact {
         height: 30vh;
     }
+
     .top-contact {
         flex-direction: column;
         margin-right: -20px;
     }
+
     .phone {
         margin-bottom: 15px;
     }
@@ -646,16 +664,22 @@ main {
         border-radius: 5px;
         text-align: left;
         font-family: Montserrat, Arial;
-     }
+    }
 
-     #fcf-button {
-    
+    #fcf-button {
+
         width: 100%;
         border-radius: 10px;
         margin-top: 20px;
         padding: 10px 0 10px 0;
         font-family: Montserrat, Arial;
-        
+
+    }
+
+    .form-submit {
+        width: 80vw;
+        height: 55vh;
+    
     }
 }
 
@@ -687,22 +711,26 @@ main {
         margin-top: 3rem;
     }
 
-    .section-container-contact i, .section-container-contact h1 {
+    .section-container-contact i,
+    .section-container-contact h1 {
         font-size: 2rem;
-        color: white; 
+        color: white;
     }
 
     .section-container-contact p {
         font-size: 1rem;
     }
 
-    .section-container-contact, .intro-container-contact  {
+    .section-container-contact,
+    .intro-container-contact {
         height: 30vh;
     }
+
     .top-contact {
         flex-direction: column;
         margin-right: -20px;
     }
+
     .phone {
         margin-bottom: 15px;
     }
@@ -723,16 +751,22 @@ main {
         border-radius: 5px;
         text-align: left;
         font-family: Montserrat, Arial;
-     }
+    }
 
-     #fcf-button {
-    
+    #fcf-button {
+
         width: 100%;
         border-radius: 10px;
         margin-top: 20px;
         padding: 10px 0 10px 0;
         font-family: Montserrat, Arial;
-        
+
+    }
+
+    .form-submit {
+        width: 80vw;
+        height: 67vh;
+    
     }
 }
 
@@ -766,22 +800,26 @@ main {
         margin-top: 3rem;
     }
 
-    .section-container-contact i, .section-container-contact h1 {
+    .section-container-contact i,
+    .section-container-contact h1 {
         font-size: 2rem;
-        color: white; 
+        color: white;
     }
 
     .section-container-contact p {
         font-size: 1rem;
     }
 
-    .section-container-contact, .intro-container-contact  {
+    .section-container-contact,
+    .intro-container-contact {
         height: 30vh;
     }
+
     .top-contact {
         flex-direction: column;
         margin-right: -20px;
     }
+
     .phone {
         margin-bottom: 15px;
     }
@@ -802,23 +840,25 @@ main {
         border-radius: 5px;
         text-align: left;
         font-family: Montserrat, Arial;
-     }
+    }
 
-     #fcf-button {
-    
+    #fcf-button {
+
         width: 100%;
         border-radius: 10px;
         margin-top: 20px;
         padding: 10px 0 10px 0;
         font-family: Montserrat, Arial;
-        
+
     }
 }
 
 /* Height less than 610px */
 
 @media only screen and (max-height: 610px) {
-    .section-container-contact, .intro-container-contact  {
+
+    .section-container-contact,
+    .intro-container-contact {
         height: 60vh;
     }
 }
@@ -850,7 +890,6 @@ footer a {
     padding: 0px;
     font-size: 30px;
     width: 30px;
-    /* margin: 10px; */
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -865,8 +904,8 @@ footer a {
     width: 7.5vw;
 }
 
-.socials a:hover{
-    color:blue;
+.socials a:hover {
+    color: blue;
 }
 
 /* Mobile Styles */
