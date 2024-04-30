@@ -69,7 +69,94 @@ if (isset($_POST['Email'])) {
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    Thanks for getting in touch. We'll get back to you soon.
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GB Create Surveys and Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="media/Logo1.png" alt="The logo, in grey and orange, for GB Create Ltd.">
+
+        <nav>
+
+            <!-- Desktop and tablet nav-->
+            <ul class="nav-list" id="desk-nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services &#9660;</button>
+                        <div class="dropdown-content">
+                            <a href="#">Structural Surveys</a>
+                            <a href="#">Design</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li></li>
+
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <ul class="mobile-nav-list" id="links">
+            <li><a href="index.html" onclick="myFunction()">Home</a></li>
+            <li><a href="#">Structural Surveys</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+        <div class="form-submit">
+            <h1>Thank you for getting in touch!</h1><br>
+            <h2>We'll get back to you as soon as possible.</h2>
+        </div>
+    
+
+
+    </main>
+
+    <footer>
+        <div class="f-container">
+
+            <h3>Get in Touch</h3><br>
+            <p><a href="mailto:gb_create@sky.com">gb_create@sky.com</a></p><br>
+            <p><a href="tel:0728321743">0728321743</a></p><br>
+
+            <div class="socials">
+                <a href="#" class="fa fa-facebook" id="fb"></a>
+                <a href="#" class="fa fa-instagram" id="ins"></a>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 <?php
 }
