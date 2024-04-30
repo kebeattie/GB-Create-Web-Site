@@ -43,9 +43,7 @@ header {
     background: rgb(126, 126, 126);
     display: none;
 
-    /* position: absolute;
-    right: 0;
-    top: 0; */
+
 }
 
 .nav-list {
@@ -269,7 +267,7 @@ main {
 
 .section-container {
     width: 100vw;
-    height: 35vw;
+    height: 65vh;
     background-color: black;
     margin: 0 auto;
 
@@ -280,11 +278,11 @@ main {
 .intro {
 
     width: 100vw;
-    height: auto;
+    /* height: auto; */
     background: url("../media/main_opaque.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vw;
+    height: 65vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -295,7 +293,7 @@ main {
 
 .section-container-contact {
     width: 100vw;
-    height: 15vw;
+    height: 30vh;
     background-color: black;
     margin: 0 auto;
 
@@ -306,11 +304,10 @@ main {
 .intro-container-contact {
 
     width: 100vw;
-    height: auto;
+    height: 30vh;
     background: url("../media/main_opaque.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -498,7 +495,7 @@ main {
 
 .form {
     margin: 25px auto 20px auto;
-    width: 30vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,7 +508,7 @@ main {
 }
 
 .fcf-form-class {
-    width: 50%;
+    width: 75%;
     height: 40vh;
 }
 
@@ -547,16 +544,6 @@ main {
     margin-top: 15px;
 }
 
-.form-submit {
-    width: 66vw;
-    margin: 0 auto;
-    text-align: center;
-    height: 32vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .section-container-contact i {
     font-size: 2rem;
@@ -576,7 +563,12 @@ main {
 
 .top-contact {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.phone {
+    margin-bottom: 20px;
 }
 
 .title {
@@ -616,6 +608,55 @@ main {
         width: 50vw;
         margin: 0 auto;
     }
+
+    .section-container-contact i {
+        font-size: 1.5rem;
+        color: white; 
+    }
+
+    .section-container-contact h1 {
+        font-size: 1.5rem;
+        color: white; 
+    }
+
+    .section-container-contact, .intro-container-contact  {
+        height: 30vh;
+    }
+    .top-contact {
+        flex-direction: column;
+        margin-right: -20px;
+    }
+    .phone {
+        margin-bottom: 15px;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .fcf-form-class {
+        width: 66vw;
+        height: 350px;
+    }
+
+    .fcf-form-control {
+        width: 100%;
+        padding: 8px 0 10px 0;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: left;
+        font-family: Montserrat, Arial;
+     }
+
+     #fcf-button {
+    
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px 0 10px 0;
+        font-family: Montserrat, Arial;
+        
+    }
 }
 
 /* Tablet Styles */
@@ -645,7 +686,56 @@ main {
     .img {
         margin-top: 3rem;
     }
+
+    .section-container-contact i, .section-container-contact h1 {
+        font-size: 2rem;
+        color: white; 
+    }
+
+    .section-container-contact p {
+        font-size: 1rem;
+    }
+
+    .section-container-contact, .intro-container-contact  {
+        height: 30vh;
+    }
+    .top-contact {
+        flex-direction: column;
+        margin-right: -20px;
+    }
+    .phone {
+        margin-bottom: 15px;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .fcf-form-class {
+        width: 66vw;
+        height: 350px;
+    }
+
+    .fcf-form-control {
+        width: 100%;
+        padding: 8px 0 10px 0;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: left;
+        font-family: Montserrat, Arial;
+     }
+
+     #fcf-button {
+    
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px 0 10px 0;
+        font-family: Montserrat, Arial;
+        
+    }
 }
+
 
 
 /* Small Tablet Styles */
@@ -675,8 +765,63 @@ main {
     .img {
         margin-top: 3rem;
     }
+
+    .section-container-contact i, .section-container-contact h1 {
+        font-size: 2rem;
+        color: white; 
+    }
+
+    .section-container-contact p {
+        font-size: 1rem;
+    }
+
+    .section-container-contact, .intro-container-contact  {
+        height: 30vh;
+    }
+    .top-contact {
+        flex-direction: column;
+        margin-right: -20px;
+    }
+    .phone {
+        margin-bottom: 15px;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .fcf-form-class {
+        width: 66vw;
+        height: 350px;
+    }
+
+    .fcf-form-control {
+        width: 100%;
+        padding: 8px 0 10px 0;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: left;
+        font-family: Montserrat, Arial;
+     }
+
+     #fcf-button {
+    
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 10px 0 10px 0;
+        font-family: Montserrat, Arial;
+        
+    }
 }
 
+/* Height less than 610px */
+
+@media only screen and (max-height: 610px) {
+    .section-container-contact, .intro-container-contact  {
+        height: 60vh;
+    }
+}
 
 /* Footer Styles */
 
