@@ -100,7 +100,7 @@ if (isset($_POST['Email'])) {
                             <button class="dropbtn">Services &#9660;</button>
                             <div class="dropdown-content">
                                 <a href="#">Structural Surveys</a>
-                                <a href="#">Design</a>
+                                <a href="design.html">Design</a>
                             </div>
                         </div>
                     </li>
@@ -123,7 +123,7 @@ if (isset($_POST['Email'])) {
             <ul class="mobile-nav-list" id="links">
                 <li><a href="index.html" onclick="myFunction()">Home</a></li>
                 <li><a href="#">Structural Surveys</a></li>
-                <li><a href="#">Design</a></li>
+                <li><a href="design.html">Design</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
 
             </ul>
