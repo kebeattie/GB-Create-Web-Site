@@ -357,13 +357,15 @@ main {
 
 }
 
-.intro h1, .intro-design h1 {
+.intro h1,
+.intro-design h1 {
     color: white;
     font-size: 3rem;
     text-align: center;
 }
 
-.intro p, .intro-design p {
+.intro p,
+.intro-design p {
     color: white;
     font-size: 1.5rem;
     text-align: center;
@@ -388,11 +390,17 @@ main {
 @media only screen and (max-width: 450px) {
 
     .section-container,
-    .intro, .intro-design {
+    .intro,
+    .intro-design {
         width: 100vw;
         height: 90vh;
     }
 
+
+    .intro-design{
+        background: url("../media/mobile_design2.png");
+
+    }
     #title {
         font-size: 1.8rem;
         text-align: center;
@@ -458,7 +466,8 @@ main {
 @media only screen and (min-width:451px) and (max-width: 936px) {
 
     .section-container,
-    .intro, .intro-design {
+    .intro,
+    .intro-design {
         width: 100vw;
         height: 75vh;
     }
@@ -492,6 +501,24 @@ main {
 
 .who p {
     line-height: 2;
+}
+
+
+.design-list {
+
+    margin: 20px 0 20px 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red; */
+
+}
+
+.design-list li {
+    margin-top: 15px;
+    font-weight: bold;
+
 }
 
 .img {
@@ -637,11 +664,11 @@ main {
     }
 
     #reviews {
-        width: 50vw;
+        width: 65vw;
         margin: 0 auto;
     }
 
-   
+
 
     .section-container-contact i {
         font-size: 1.5rem;
@@ -698,7 +725,7 @@ main {
     .form-submit {
         width: 80vw;
         height: 55vh;
-    
+
     }
 }
 
@@ -785,7 +812,7 @@ main {
     .form-submit {
         width: 80vw;
         height: 67vh;
-    
+
     }
 }
 
