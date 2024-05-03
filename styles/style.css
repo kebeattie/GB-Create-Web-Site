@@ -270,7 +270,7 @@ main {
     height: 65vh;
     background-color: black;
     margin: 0 auto;
-    position: relative; 
+    position: relative;
     z-index: 2;
 
 
@@ -280,7 +280,7 @@ main {
 .intro {
 
     width: 100vw;
-    background: url("../media/main_opaquev2.png");
+    background: url("../media/liverpoolv4.png");
     /* opacity: 0.5; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,8 +289,8 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
-    
+
+
 
 
 }
@@ -411,20 +411,79 @@ main {
     cursor: pointer;
 }
 
+
+.map-container .design-list {
+    list-style-type: none;
+}
+
+.map-container {
+    margin: 0 auto;
+    width: 66vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: rgba(44, 44, 44, 0.753);
+
+}
+
+.map {
+    border-radius: 20px;
+    margin-left: 18px;
+}
+
+
+
+#where {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
 /* Mobile Styles */
+@media only screen and (max-height: 380px) {
+    .main-button {
+        margin-top: 2rem;
+    }
+}
+
 @media only screen and (max-width: 450px) {
 
     .section-container,
     .intro,
-    .intro-design {
+    .intro-design,
+    .intro-surveys {
         width: 100vw;
         height: 90vh;
     }
+
+
+    .map,
+    .mobile-nomap {
+        display: none;
+    }
+
+    .map-container .design-list {
+        list-style-type: disc;
+    }
+
+    .map-container {
+        margin: 0 auto;
+        width: 88vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+    }
+
 
     /* mobile image for design page */
     .intro-design {
         background: url("../media/mobile_design2v2.png");
 
+    }
+
+    .intro {
+        background: url("../media/liverpool_more_opaque_mobile.png");
     }
 
     #title {
@@ -459,6 +518,11 @@ main {
 
 
     }
+
+    #reviews h1 {
+        text-align: left;
+    }
+
 }
 
 /* Tablet Styles */
@@ -485,6 +549,26 @@ main {
         width: 80vw;
 
     }
+
+    .map,
+    .mobile-nomap {
+        display: none;
+    }
+
+    .map-container .design-list {
+        list-style-type: disc;
+    }
+
+    .map-container {
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+
+    }
+
+
 }
 
 /*Small Tablet Styles */
@@ -493,7 +577,8 @@ main {
 
     .section-container,
     .intro,
-    .intro-design {
+    .intro-design,
+    .intro-surveys {
         width: 100vw;
         height: 75vh;
     }
@@ -513,6 +598,51 @@ main {
 
     }
 
+    .map,
+    .mobile-nomap {
+        display: none;
+    }
+
+    .map-container .design-list {
+        list-style-type: disc;
+    }
+
+    .map-container {
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+
+    }
+
+}
+
+@media only screen and (min-width: 936px) and (max-width: 1200px) {
+
+    .map,
+    .mobile-nomap {
+        display: none;
+    }
+
+    .map-container .design-list {
+        list-style-type: disc;
+    }
+
+    .map-container {
+        margin: 0 auto;
+        width: 66vw;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .map {
+        width: 50vw;
+    }
 }
 
 
@@ -557,6 +687,7 @@ main {
 
 .about-container h2 {
     text-align: center;
+    color: rgb(44, 44, 44);
 }
 
 .img-container {
@@ -592,7 +723,7 @@ main {
 
 .fcf-form-class {
     width: 75%;
-    height: 40vh;
+    height: 400px;
 }
 
 .fcf-form-control {
@@ -662,6 +793,13 @@ main {
     margin-right: -20px;
 }
 
+#reviews {
+    margin-top: -3rem;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 450px) {
@@ -696,7 +834,9 @@ main {
         margin: 0 auto;
     }
 
-
+    .about-container h2 {
+        text-align: left;
+    }
 
     .section-container-contact i {
         font-size: 1.5rem;
@@ -716,10 +856,13 @@ main {
     .top-contact {
         flex-direction: column;
         margin-right: -15px;
+
     }
+
 
     .phone {
         margin-bottom: 15px;
+
     }
 
     .form {
@@ -728,7 +871,7 @@ main {
 
     .fcf-form-class {
         width: 66vw;
-        height: 350px;
+        height: 380px;
     }
 
     .fcf-form-control {
@@ -815,7 +958,7 @@ main {
 
     .fcf-form-class {
         width: 66vw;
-        height: 350px;
+        height: 380px;
     }
 
     .fcf-form-control {
@@ -904,7 +1047,7 @@ main {
 
     .fcf-form-class {
         width: 66vw;
-        height: 350px;
+        height: 380px;
     }
 
     .fcf-form-control {
@@ -934,6 +1077,11 @@ main {
     .section-container-contact,
     .intro-container-contact {
         height: 60vh;
+    }
+
+    #reviews {
+        width: 70vw;
+        margin: 0 auto;
     }
 }
 
