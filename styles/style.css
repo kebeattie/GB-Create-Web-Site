@@ -133,7 +133,7 @@ header {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 567px) {
     header {
         width: 80vw;
 
@@ -202,6 +202,13 @@ header {
     }
 
 
+}
+
+@media only screen and (min-width: 567px) and (max-width: 629px) {
+    #desk-nav li {
+        padding: 0.1rem;
+        font-size: 0.7rem;
+    }
 }
 
 /* Tablet Styles */
@@ -420,7 +427,7 @@ main {
     margin: 0 auto;
     width: 66vw;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     color: rgba(44, 44, 44, 0.753);
 
@@ -431,6 +438,9 @@ main {
     margin-left: 18px;
 }
 
+.design-list li {
+    color: rgba(44, 44, 44, 0.753);
+}
 
 
 #where {
@@ -675,7 +685,7 @@ main {
 }
 
 .img {
-    width: 40vw;
+    width: 60%;
     height: auto;
 }
 

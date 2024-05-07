@@ -1,9 +1,9 @@
 <?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE FOLLOWING TWO LINES:
-    $email_to = "kebeattie98@hotmail.com";
-    $email_subject = "Test";
+    
+    $email_to = "gb_create@sky.com";
+    $email_subject = "A website user has sent a question";
 
     function problem($error)
     {

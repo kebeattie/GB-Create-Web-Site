@@ -1,13 +1,16 @@
+var x = document.getElementById("links");
 
 function myFunction() {
-    var x = document.getElementById("links");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-
-   
-
+  
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
+
+}
+
+window.matchMedia("(orientation: landscape)").addEventListener("change", e => {
+  x.style.display = "none";
+});
 
