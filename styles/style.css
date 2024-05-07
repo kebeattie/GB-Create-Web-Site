@@ -181,14 +181,14 @@ header {
     }
 
     .mobile-nav-list {
-        width: 100%;
+        width: 100vw;
         margin: 0 auto;
     }
 
 
     .mobile-nav-list a {
         display: block;
-        width: 100%;
+        width: 100vw;
         padding: 10px;
         line-height: 2;
         color: white;
