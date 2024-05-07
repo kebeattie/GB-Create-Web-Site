@@ -2,7 +2,7 @@
 if (isset($_POST['Email'])) {
 
     
-    $email_to = "gb_create@sky.com";
+    $email_to = "kebeattie98@hotmail.com";
     $email_subject = "A website user has sent a question";
 
     function problem($error)
@@ -24,8 +24,10 @@ if (isset($_POST['Email'])) {
     }
 
     $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
+    $email = 'mail@gbcreate.co.uk'; // required
+    $userEmail =$_POST['Email'];
     $message = $_POST['Message']; // required
+    $number = $_POST['tel'];
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -57,8 +59,10 @@ if (isset($_POST['Email'])) {
     }
 
     $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
+    $email_message .= "Email: " . clean_string($userEmail) . "\n";
+    $email_message .= "Telephone: " .clean_string($number) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
+    
 
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .
@@ -95,17 +99,11 @@ if (isset($_POST['Email'])) {
                 <!-- Desktop and tablet nav-->
                 <ul class="nav-list" id="desk-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Services &#9660;</button>
-                            <div class="dropdown-content">
-                                <a href="#">Structural Surveys</a>
-                                <a href="design.html">Design</a>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="surveys.html">Structural Surveys</a></li>
+                    <li><a href="design.html">Design</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li></li>
+
+                    
 
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
