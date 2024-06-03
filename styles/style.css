@@ -1107,7 +1107,7 @@ main {
 footer {
     width: 100vw;
     background-color: rgb(126, 126, 126);
-    height: 23vh;
+    height: 18vh;
     color: white;
 }
 
@@ -1121,7 +1121,7 @@ footer a {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -1146,6 +1146,10 @@ footer a {
 .socials a:hover {
     color: blue;
 }
+
+/* .footer-contact {
+    padding: 7px 0 7px 0;
+} */
 
 /* Mobile Styles */
 @media only screen and (max-width: 450px) {
