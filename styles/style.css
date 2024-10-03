@@ -706,69 +706,72 @@ main {
 }
 
 .form {
-    margin: 25px auto 20px auto;
+    margin: 25px auto 20px; /* Simplified margin property */
     width: 50vw;
+    max-width: 600px; /* Added max-width for better responsiveness */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-family: Montserrat, Arial;
+    justify-content: center;
+    font-family: Montserrat, Arial, sans-serif; /* Added sans-serif for fallback */
     background-color: rgb(231, 229, 229);
     border-radius: 20px;
-
-
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .form-submit {
-    width: 66vw;
-    height: 65vh;
+    width: 100%; /* Full width for consistency */
+    flex-grow: 1; /* Allow it to grow and occupy available space */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0; /* Removed margin for better centering */
     text-align: center;
 }
 
 .fcf-form-class {
-    width: 75%;
-    height: 400px;
+    width: 75%; /* Maintain the width */
+    height: auto; /* Set height to auto to accommodate content without scroll */
 }
 
 .fcf-form-control {
     width: 100%;
-    padding: 8px 10px 10px 10px;
+    padding: 10px; /* Consistent padding */
     margin-top: 20px;
     border-radius: 5px;
-    text-align: left;
-    font-family: Montserrat, Arial;
+    border: 1px solid #ccc; /* Added border for better visibility */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+    font-family: inherit; /* Use inherited font-family */
 }
 
 #fcf-button {
-
     width: 100%;
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px;
-    font-family: Montserrat, Arial;
-
+    font-family: inherit; /* Inherit font-family */
+    background-color: var(--background-color, gray); /* Added a fallback color */
+    color: white;
+    border: none; /* Removed default border */
+    cursor: pointer; /* Ensure pointer on hover */
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition effects */
 }
 
 #fcf-button:hover {
-    background-color: gray;
-    cursor: pointer;
-    color: white;
+    background-color: #555; /* Darker color for hover effect */
 }
 
 #fcf-button:active {
-    position: relative;
-    top: 5px;
+    transform: translateY(2px); /* Use transform for a smoother effect */
 }
 
 .form h2 {
     margin-top: 15px;
+    font-size: 1.5rem; /* Set a suitable font size */
+    color: var(--primary-color, black); /* Added fallback color */
 }
-
 
 .section-container-contact i {
     font-size: 2rem;
@@ -875,7 +878,7 @@ main {
     }
 
     .form {
-        width: 90vw;
+        width: 80vw;
     }
 
     .fcf-form-class {
@@ -1105,46 +1108,57 @@ main {
 /* Footer Styles */
 
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: rgb(126, 126, 126);
-    height: 18vh;
+    height: 18vh; /* Consider replacing with min-height for responsiveness */
     color: white;
+    display: flex; /* Added flex for better alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px 0; /* Added padding for better spacing */
 }
 
 footer a {
     color: white;
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 .f-container {
     width: 66vw;
+    max-width: 1200px; /* Added max-width for larger screens */
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed to space-between for balanced spacing */
     align-items: center;
 }
-
-.socials a {
-    padding: 0px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-}
-
-
 
 .socials {
     display: flex;
     justify-content: center;
-    width: 7.5vw;
+    width: 100%; /* Full width for better alignment */
+    margin-top: 10px; /* Slight margin for separation */
+}
+
+.socials a {
+    padding: 10px; /* Added padding for a larger clickable area */
+    font-size: 30px; /* Increased font size for clarity */
+    width: 30px;
+    height: 30px; /* Set explicit height for consistent sizing */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background on icons */
+    display: flex; /* Use flex to center icons */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s; /* Smooth background transition */
 }
 
 .socials a:hover {
     color: blue;
+    background-color: rgba(255, 255, 255, 0.3); /* Brighten background on hover */
 }
 
 /* .footer-contact {
